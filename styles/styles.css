@@ -60,9 +60,6 @@ main{
     flex:1;
 }
 
-
-
-
 nav a{
     color: #0088B3;
     font-weight: 600;
@@ -145,7 +142,7 @@ main{
     .ham-nav label{
       display: block;
       font-size: 25px;
-      padding: 3px 12px 10px 10px;
+      padding: 3px 0px 10px 10px;
       position: absolute;
       transition: transform 0.2s;
   
@@ -164,6 +161,16 @@ main{
     }
   }
 
+@media screen and (max-width: 600px){
+
+    .logo{
+        margin-left: 12px;
+    }
+
+    .ham-nav label{
+        margin-right: 12px;
+      }
+}
 footer{
     background-color: #0088B3;
     padding: 12px 100px;
@@ -222,7 +229,7 @@ footer .active{
 }
 @media only screen and (max-width: 600px){
     footer{
-        padding: 12px 16px;
+        padding: 12px 12px;
         height: 120px;
     }
 

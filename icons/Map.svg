@@ -1,0 +1,8 @@
+<svg id="Map" xmlns="http://www.w3.org/2000/svg" width="67" height="67" viewBox="0 0 67 67">
+  <path id="Path_12" data-name="Path 12" d="M33.5,0A33.5,33.5,0,1,1,0,33.5,33.5,33.5,0,0,1,33.5,0Z" fill="#0088b3"/>
+  <g id="pin" transform="translate(21.882 16.073)">
+    <g id="Group_1" data-name="Group 1">
+      <path id="Path_9" data-name="Path 9" d="M96.951,0A11.619,11.619,0,0,0,86.728,17.139l9.588,17.34a.726.726,0,0,0,1.271,0l9.591-17.346A11.62,11.62,0,0,0,96.951,0Zm0,17.427a5.809,5.809,0,1,1,5.809-5.809A5.816,5.816,0,0,1,96.951,17.427Z" transform="translate(-85.333)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

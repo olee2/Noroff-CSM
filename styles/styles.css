@@ -142,7 +142,7 @@ main{
     .ham-nav label{
       display: block;
       font-size: 25px;
-      padding: 3px 0px 10px 10px;
+      padding: 3px 12px 10px 10px;
       position: absolute;
       transition: transform 0.2s;
   
@@ -168,7 +168,7 @@ main{
     }
 
     .ham-nav label{
-        margin-right: 12px;
+        margin-right: 0px;
       }
 }
 footer{

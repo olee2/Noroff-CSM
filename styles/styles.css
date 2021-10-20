@@ -212,7 +212,7 @@ footer .active{
         flex-direction: column-reverse;
         justify-content: space-around;
         height: 150px;
-        padding: 12px 37px;
+        padding: 12px;
         
     }
 
@@ -224,6 +224,10 @@ footer .active{
     footer{
         padding: 12px 16px;
         height: 120px;
+    }
+
+    .social-media{
+        padding: 12px 0;
     }
 
     .copyright p, .footer-links a{

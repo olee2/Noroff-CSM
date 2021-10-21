@@ -53,13 +53,13 @@ p{
     font-size: 21px;
     align-self: center;
     box-sizing: border-box;
-    margin: 15px auto;
-    padding-top: 10px;
+    margin: 20px auto 40px auto;
+    padding-top: 18px;
     display: block;
     text-align: center;
     color: #000;
-    height: 50px;
-    width: 150px;
+    height: 67px;
+    width: 201px;
 }
 
 header{

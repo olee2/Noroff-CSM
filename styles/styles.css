@@ -48,6 +48,20 @@ p{
     display: flex;
 }
 
+.cta1{
+    background-color: #FF8C1A;
+    font-size: 21px;
+    align-self: center;
+    box-sizing: border-box;
+    margin: 15px auto;
+    padding-top: 10px;
+    display: block;
+    text-align: center;
+    color: #000;
+    height: 50px;
+    width: 150px;
+}
+
 header{
     justify-content: space-between;
     position: sticky;
@@ -94,7 +108,7 @@ main{
   margin-right: 100px;
 }
 
-.ham-items a{
+.ham-link{
   flex-grow: 1;
   flex-basis: 0;
   margin: 5px 0px 10px 20px;
@@ -132,10 +146,9 @@ main{
       border-bottom: solid 1px #0088B3;
     }
   
-    .ham-items a{
+    .ham-link{
       box-sizing: border-box;
       display: block;
-      width: 100%;
       padding: 15px 10px 10px 10px;
       margin: 0;
     }
@@ -163,7 +176,7 @@ main{
   }
 
 @media screen and (max-width: 600px){
-    
+
     .logo{
         width: 120px;
         margin-left: 16px;

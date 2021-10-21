@@ -16,19 +16,20 @@ a{
 
 h1{
     color: #FFF;
-    font-size: 67px;
+    font-size: 50px;
+    text-shadow: 1px 1px 1px #000;
 }
 
 h2{
-    font-size: 50px;
-}
-
-h3{
     font-size: 37px;
 }
 
-h4{
+h3{
     font-size: 28px;
+}
+
+h4{
+    font-size: 21px;
 }
 
 p{
@@ -40,7 +41,7 @@ p{
     color: #0088B3;
 }
 
-.h.weight{
+.semi-bold{
     font-weight: 600;
 }
 
@@ -52,9 +53,14 @@ p{
     align-self: center;
 }
 
+.justify-content-center{
+    justify-content: center;
+}
+
 .cta{
     font-size: 21px;
     box-sizing: border-box;
+    font-weight: 600;
     padding-top: 17px;
     display: block;
     text-align: center;
@@ -86,11 +92,40 @@ p{
 }
 
 .header-image-home{
+    box-sizing: border-box;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/AdobeStock_208752273-min.jpeg");
     background-size: cover;
+    background-position: 10% 10%;
     height: 100vh;
     width: 100%;
+    border-bottom: 1px solid #FF8C1A;
+}
+
+.header-cta{
+    text-align: center;
+    float: right;
+    margin: 80px 80px 0 0;
+    color: #fff;
+}
+
+.header-cta p{
+    font-size: 21px;
+}
+
+.header-cta .cta{
+    margin: 16px auto;
+}
+
+.header-cta .cta:hover{
+    background: none;
+    color: #fff;
+}
+
+
+header h1{
+    margin-top: 310px;
+    margin-left: 120px;
 }
 
 header{
@@ -153,12 +188,18 @@ main{
   display: none;
 }
 
-header .cta{
+.ham-nav .cta{
     margin: 20px auto 40px auto;
     display: none;
 }
 
+@media screen and (max-width: 1450px){
+    header h1{
+        margin-top: 250px;
+        margin-left: 80px;
+    }
 
+}
 
 @media screen and (max-width: 1260px){
 

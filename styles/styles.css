@@ -285,7 +285,6 @@ main{
         align-items: center;
     }
         
-
     header h1{
         margin: 100px 0 0 0;
     }
@@ -295,6 +294,12 @@ main{
         margin: 0;
     }
 
+}
+
+@media screen and (max-width: 768px){
+    .header-image-home{
+        background-position: center;
+    }
 }
 
 

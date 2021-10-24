@@ -168,6 +168,7 @@ main{
 .ham-items{
   align-items: center;
   margin-right: 100px;
+  background-color: #FFF;
 }
 
 .ham-link{
@@ -242,6 +243,7 @@ main{
       margin-top: 58px;
       width: 100%;
       position: absolute;
+      top: 30px;
     }
   
     .ham-nav input:checked ~ label {
@@ -262,7 +264,11 @@ main{
     }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 992px){
+
+    .ham-nav input:checked ~ .ham-items {
+        top: 19px;
+      }
 
     .logo{
         width: 120px;
@@ -272,8 +278,28 @@ main{
     .ham-nav label{
         margin-right: 4px;
       }
+    .header-image-home{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+        
+
+    header h1{
+        margin: 100px 0 0 0;
+    }
+
+    .header-cta{
+        float: none;
+        margin: 0;
+    }
 
 }
+
+
+
+
 footer{
     background-color: #0088B3;
     padding: 12px 100px;

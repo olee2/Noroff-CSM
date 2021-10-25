@@ -22,10 +22,13 @@ h1{
 
 h2{
     font-size: 37px;
+    margin: 37px 0;
 }
 
 h3{
     font-size: 28px;
+    margin: 28px 0;
+    text-align: center;
 }
 
 p{
@@ -50,6 +53,21 @@ p{
     display: flex;
 }
 
+.grid{
+    display: grid;
+}
+
+.card{
+    flex-direction: column;
+    padding-bottom: 16px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px;
+    max-width: 350px;
+}
+
+.card h3, .card p{
+    padding: 0 16px;
+}
+
 .align-self-center{
     align-self: center;
 }
@@ -58,7 +76,7 @@ p{
     justify-content: center;
 }
 
-.cta{
+.button{
     font-size: 21px;
     box-sizing: border-box;
     font-weight: 600;
@@ -70,23 +88,20 @@ p{
     width: 201px;
 }
 
-.cta1{
+.button1{
     background-color: #FF8C1A;
     border: solid 2px #FF8C1A;
 }
 
 @media screen and (min-width: 992px){
-    .cta1:hover{
+    .button1:hover{
         background-color: #FFF;
     }
 }
 
-.cta2{
+.button2{
     background-color: #19C9FF ;
 }
-
-
-
 
 
 @media screen and (max-width: 600px){
@@ -145,12 +160,12 @@ header h1{
     font-size: 21px;
 }
 
-.header-cta .cta{
+.header-cta .button{
     margin: 16px auto;
 }
 
 @media screen and (min-width: 992px){
-    .header-cta .cta:hover{
+    .header-cta .button:hover{
         background: none;
         color: #fff;
     }
@@ -201,7 +216,7 @@ nav a:hover{
   display: none;
 }
 
-.ham-nav .cta{
+.ham-nav .button{
     margin: 20px auto 40px auto;
     display: none;
 }
@@ -267,11 +282,11 @@ nav a:hover{
         text-decoration: none;
     }
 
-    header .cta{
+    .ham-nav .button{
         display: block;
     }
 
-    header .cta:hover{
+    .ham-nav .button:hover{
         background-color: #FF8C1A;
     }
 }
@@ -319,12 +334,37 @@ main{
     flex: 1;
 }
 
+.news{
+    padding: 0 100px;
+    justify-content: space-evenly;
+    grid-column-gap: 16px;
+    grid-template-areas: 
+    "h h h"
+    "v n e";
+}
 
+.news h2{
+    grid-area: h;
+    text-align: center;
+}
+
+.visiting{
+    grid-area: v;
+}
+
+.night{
+    grid-area: n;
+}
+
+.energetica{
+    grid-area: e;
+}
 
 /* Footer */
 
 footer{
     background-color: #0088B3;
+    margin-top: 50px;
     padding: 12px 100px;
     justify-content: space-between;}
 

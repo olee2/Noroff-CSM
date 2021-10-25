@@ -33,27 +33,17 @@ p{
     margin: 0;
 }
 
-@media screen and (max-width: 600px){
-    h1{
-        font-size: 37px;
-    }
-    
-    h2{
-        font-size: 28px;
-    }
-    
-    h3{
-        font-size: 21px;
-    }
-}
-
-
 .h-color{
     color: #0088B3;
 }
 
 .semi-bold{
     font-weight: 600;
+}
+
+.active{
+    text-decoration: underline;
+    text-decoration-color: #FF8C1A;
 }
 
 .flex{
@@ -85,12 +75,43 @@ p{
     border: solid 2px #FF8C1A;
 }
 
-.cta1:hover{
-    background-color: #FFF;
+@media screen and (min-width: 992px){
+    .cta1:hover{
+        background-color: #FFF;
+    }
 }
 
 .cta2{
     background-color: #19C9FF ;
+}
+
+
+
+
+
+@media screen and (max-width: 600px){
+    h1{
+        font-size: 37px;
+    }
+    
+    h2{
+        font-size: 28px;
+    }
+    
+    h3{
+        font-size: 21px;
+    }
+}
+
+/* Header and Nav */
+
+header{
+    flex-direction: column;
+}
+
+header h1{
+    margin-top: 310px;
+    margin-left: 120px;
 }
 
 .sticky-header{
@@ -128,24 +149,13 @@ p{
     margin: 16px auto;
 }
 
-.header-cta .cta:hover{
-    background: none;
-    color: #fff;
+@media screen and (min-width: 992px){
+    .header-cta .cta:hover{
+        background: none;
+        color: #fff;
+    }
 }
 
-
-header h1{
-    margin-top: 310px;
-    margin-left: 120px;
-}
-
-header{
-    flex-direction: column;
-}
-
-main{
-    flex:1;
-}
 
 nav a{
     color: #0088B3;
@@ -161,15 +171,6 @@ nav a:hover{
 .logo{
     width: 160px;
     margin-left: 100px;
-}
-
-.active{
-    text-decoration: underline;
-    text-decoration-color: #FF8C1A;
-}
-
-main{
-    flex: 1;
 }
 
 .ham-nav{
@@ -313,8 +314,21 @@ main{
     }
 }
 
+@media screen and (max-width: 600px){
+    .header-cta p{
+        font-size: px;
+    }
+}
 
 
+
+main{
+    flex: 1;
+}
+
+
+
+/* Footer */
 
 footer{
     background-color: #0088B3;

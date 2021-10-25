@@ -314,13 +314,6 @@ nav a:hover{
     }
 }
 
-@media screen and (max-width: 600px){
-    .header-cta p{
-        font-size: 16px;
-    }
-}
-
-
 
 main{
     flex: 1;

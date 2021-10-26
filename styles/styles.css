@@ -22,6 +22,7 @@ h1{
 
 h2{
     font-size: 37px;
+    font-weight: 700;
     margin: 50px 0 13px 0;
 }
 
@@ -90,8 +91,8 @@ p{
 }
 
 .card img{
-    width: 100%;
-    height: auto;
+    max-width: 350px;
+
 }
 
 .card h3, .card p{
@@ -156,6 +157,10 @@ p{
 
     .card h3, .card p{
         padding: 0px;
+    }
+
+    .card img{
+        max-width: 100%;
     }
 
     .separate{
@@ -432,12 +437,12 @@ main{
         padding: 0 28px;
         justify-content: space-evenly;
         grid-gap: 37px;
+    }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 768px){
     .news{
         padding: 0px;
-        grid-gap: 37px;
         grid-template-areas: 
         "h"
         "v"

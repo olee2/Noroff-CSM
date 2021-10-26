@@ -180,6 +180,10 @@ p{
     .card img{
         max-width: 100%;
     }
+
+    .separate-section{
+        margin: 50px 0;
+    }
 }
 
 /* Header and Nav */
@@ -502,7 +506,7 @@ main{
     }
 
     .connect{
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
         margin: 0;
     }

@@ -38,8 +38,12 @@ p{
 }
 
 .separate{
-    width: 70%;
-    display: none;
+    width: 100%;
+    border: 1px solid #FF8C1A;
+}
+
+.separate-section{
+    margin: 50px 100px 0 100px;
     border: 1px solid #FF8C1A;
 }
 
@@ -161,10 +165,6 @@ p{
 
     .card img{
         max-width: 100%;
-    }
-
-    .separate{
-        display: block;
     }
 }
 
@@ -407,6 +407,10 @@ main{
     text-decoration: underline;
 }
 
+.news .separate{
+    display: none;
+}
+
 .visiting{
     grid-area: v;
 }
@@ -419,6 +423,50 @@ main{
     grid-area: e;
 }
 
+.connect{
+    color: #0088B3;
+    justify-content: space-between;
+    margin: 0 100px;
+}
+
+.social{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social div{
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 28px;
+}
+
+.newsletter label::after {
+    content: "\A";
+    white-space: pre;
+  }
+
+.newsletter input{
+    box-sizing: border-box;
+    padding-left: 30px;
+    width: 65%;
+    border: 1px solid #0088B3;
+    box-shadow: none;
+}
+
+.newsletter input:focus{
+    outline-style: groove;
+    outline-color: #0088B3;
+}
+
+.newsletter .button{
+    width: 30%;
+}
+
+.newsletter .flex{
+    justify-content: space-between;
+    margin-top: 28px;
+}
 
 @media screen and (max-width: 1260px){
     .news{
@@ -438,6 +486,13 @@ main{
         justify-content: space-evenly;
         grid-gap: 37px;
     }
+
+    .connect{
+        flex-direction: column;
+        align-items: center;
+        padding: 28px;
+        margin: 0;
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -450,6 +505,10 @@ main{
         "n"
         "l2"
         "e";
+    }
+
+    .news .separate{
+        display: block;
     }
 }
 

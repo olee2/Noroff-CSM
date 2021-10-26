@@ -38,12 +38,13 @@ p{
 }
 
 .separate{
-    width: 100%;
+    width: 50%;
     border: 1px solid #FF8C1A;
+    display: none;
 }
 
 .separate-section{
-    margin: 50px 100px 0 100px;
+    margin: 50px 100px;
     border: 1px solid #FF8C1A;
 }
 
@@ -129,6 +130,7 @@ p{
     border: solid 2px #FF8C1A;
 }
 
+
 @media screen and (min-width: 992px){
     .button1:hover{
         background-color: #FFF;
@@ -137,6 +139,18 @@ p{
 
 .button2{
     background-color: #19C9FF ;
+}
+
+@media screen and (max-width: 1260px){
+    .separate-section{
+        margin: 50px 37px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .separate-section{
+        margin: 50px 16px;
+    }
 }
 
 
@@ -407,10 +421,6 @@ main{
     text-decoration: underline;
 }
 
-.news .separate{
-    display: none;
-}
-
 .visiting{
     grid-area: v;
 }
@@ -425,8 +435,12 @@ main{
 
 .connect{
     color: #0088B3;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0 100px;
+}
+
+.connect h2{
+    margin-top: 0;
 }
 
 .social{
@@ -490,8 +504,12 @@ main{
     .connect{
         flex-direction: column;
         align-items: center;
-        padding: 28px;
         margin: 0;
+    }
+
+    .connect .separate{
+        display: block;
+        margin: 50px 0;
     }
 }
 
@@ -565,6 +583,10 @@ footer .active{
         height: 150px;
         padding: 12px;
         
+    }
+
+    .social-media{
+        margin: 12px;
     }
 
     .social-media, .footer-links, .copyright{

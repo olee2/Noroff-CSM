@@ -124,6 +124,10 @@ p{
     h3{
         font-size: 21px;
     }
+
+    .card{
+        max-width: 100%;
+    }
 }
 
 /* Header and Nav */
@@ -396,7 +400,7 @@ main{
 
 @media screen and (max-width: 992px){
     .news{
-        padding: 0 100px;
+        padding: 0px;
         justify-content: space-evenly;
         grid-gap: 37px;
         grid-template-areas: 

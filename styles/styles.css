@@ -36,6 +36,25 @@ p{
     margin: 0;
 }
 
+.separate{
+    width: 70%;
+    display: none;
+    border: 1px solid #FF8C1A;
+}
+
+.line1{
+    grid-area: l1;
+}
+
+.line2{
+    grid-area: l2;
+}
+
+.line3{
+    grid-area: l3;
+}
+
+
 .h-color{
     color: #0088B3;
 }
@@ -127,6 +146,16 @@ p{
 
     .card{
         max-width: 100%;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .card h3, .card p{
+        padding: 0px;
+    }
+
+    .separate{
+        display: block;
     }
 }
 
@@ -360,7 +389,7 @@ main{
     text-align: center;
 }
 
-.news p{
+.margin-bottom-16px{
     margin-bottom: 16px;
 }
 
@@ -412,7 +441,9 @@ main{
         grid-template-areas: 
         "h"
         "v"
+        "l1"
         "n"
+        "l2"
         "e";
     }
 }

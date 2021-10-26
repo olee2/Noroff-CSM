@@ -459,6 +459,10 @@ main{
     margin-top: 28px;
 }
 
+.twitter{
+    margin: 0 16px;
+}
+
 .newsletter label::after {
     content: "\A";
     white-space: pre;
@@ -505,10 +509,14 @@ main{
         grid-gap: 37px;
     }
 
+    .newsletter{
+        text-align: center;
+    }
+
     .connect{
         flex-direction: column-reverse;
         align-items: center;
-        margin: 0;
+        margin: 16px;
     }
 
     .connect .separate{

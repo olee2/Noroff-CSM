@@ -403,6 +403,12 @@ main{
         padding: 0 28px;
         justify-content: space-evenly;
         grid-gap: 37px;
+}
+
+@media screen and (max-width: 600px){
+    .news{
+        padding: 0 12px;
+        grid-gap: 37px;
         grid-template-areas: 
         "h"
         "v"
@@ -410,7 +416,6 @@ main{
         "e";
     }
 }
-
 
 /* Footer */
 

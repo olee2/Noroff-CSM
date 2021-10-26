@@ -22,7 +22,7 @@ h1{
 
 h2{
     font-size: 37px;
-    margin: 37px 0;
+    margin: 50px 0;
 }
 
 h3{
@@ -54,10 +54,12 @@ p{
 }
 
 .grid{
+    box-sizing: border-box;
     display: grid;
 }
 
 .card{
+    box-sizing: border-box;
     flex-direction: column;
     padding-bottom: 16px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px;
@@ -67,6 +69,7 @@ p{
 .card h3, .card p{
     padding: 0 16px;
 }
+
 
 .align-self-center{
     align-self: center;
@@ -348,6 +351,19 @@ main{
     text-align: center;
 }
 
+.news p{
+    margin-bottom: 16px;
+}
+
+.news a{
+    color: #000;
+    font-weight: 600;
+}
+
+.news a:hover{
+    text-decoration: underline;
+}
+
 .visiting{
     grid-area: v;
 }
@@ -359,6 +375,33 @@ main{
 .energetica{
     grid-area: e;
 }
+
+
+@media screen and (max-width: 1260px){
+    .news{
+        padding: 0 100px;
+        justify-content: space-evenly;
+        grid-gap: 37px;
+        grid-template-areas: 
+        "h h"
+        "v n"
+        "e ..";
+    }
+}
+
+@media screen and (max-width: 992px){
+    .news{
+        padding: 0 100px;
+        justify-content: space-evenly;
+        grid-gap: 37px;
+        grid-template-areas: 
+        "h"
+        "v"
+        "n"
+        "e";
+    }
+}
+
 
 /* Footer */
 

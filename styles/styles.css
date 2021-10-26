@@ -66,6 +66,11 @@ p{
     max-width: 350px;
 }
 
+.card img{
+    width: 100%;
+    height: auto;
+}
+
 .card h3, .card p{
     padding: 0 16px;
 }

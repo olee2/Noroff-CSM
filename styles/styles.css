@@ -497,6 +497,11 @@ main{
     margin: 0 16px;
 }
 
+.newsletter{
+    flex-direction: column;
+    width: 100%;
+}
+
 .newsletter label::after {
     content: "\A";
     white-space: pre;

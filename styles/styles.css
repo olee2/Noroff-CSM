@@ -647,6 +647,8 @@ main{
 
 @media screen and (max-width: 768px){
     .visit{
+        grid-gap: 0;
+        padding: 0;
         grid-template-columns: auto;
         grid-template-areas: 
         "h"
@@ -656,12 +658,25 @@ main{
         "c";
     }
 
+    .visit section{
+        padding: 0 16px;
+    }
+
+    .visit .separate{
+        display: block;
+        margin: 50px 0;
+    }
+
+    .visit h3{
+        margin-top: 0;
+    }
+
+    .visit .h{
+        margin-bottom: 50px;
+    }
+
 }
    
-
-
-
-
 
 /* Footer */
 

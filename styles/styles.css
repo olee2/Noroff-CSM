@@ -24,7 +24,7 @@ h1{
 h2{
     font-size: 37px;
     font-weight: 700;
-    margin: 50px 0 13px 0;
+    margin: 50px 0px 0 0;
 }
 
 h3{
@@ -47,6 +47,12 @@ p{
 .separate-section{
     margin: 50px 100px;
     border: 1px solid #FF8C1A;
+}
+
+.h2-line{
+    width: 50px;
+    border: 1px solid #0088B3;
+    margin-top: 0;
 }
 
 .line1{
@@ -112,6 +118,10 @@ p{
 
 .justify-content-center{
     justify-content: center;
+}
+
+.text-align-center{
+    text-align: center;
 }
 
 .button{
@@ -412,7 +422,7 @@ main{
     "v n e";
 }
 
-.news h2{
+.h2-div{
     grid-area: h;
     text-align: center;
 }
@@ -442,6 +452,10 @@ main{
     color: #0088B3;
     justify-content: space-around;
     margin: 0 100px;
+}
+
+.connect .h2-line{
+    margin-bottom: 21px;
 }
 
 .connect h2{

@@ -215,9 +215,9 @@ header{
     flex-direction: column;
 }
 
-header h1{
-    margin-top: 310px;
-    margin-left: 120px;
+.header-image-home h1{
+    margin-top: 230px;
+    margin-left: 100px;
 }
 
 .sticky-header{
@@ -228,41 +228,6 @@ header h1{
     border-bottom: solid 1px #0088B3;
     width: 100%;
 }
-
-.header-image-home{
-    box-sizing: border-box;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/AdobeStock_208752273-min.jpeg");
-    background-size: cover;
-    background-position: 10% 10%;
-    height: 100vh;
-    width: 100%;
-    border-bottom: 1px solid #FF8C1A;
-}
-
-.header-cta{
-    text-align: center;
-    float: right;
-    margin: 80px 80px 0 0;
-    color: #fff;
-}
-
-.header-cta p{
-    font-size: 21px;
-}
-
-.header-cta .button{
-    margin: 16px auto;
-    padding-top: 16px;
-}
-
-@media screen and (min-width: 992px){
-    .header-cta .button:hover{
-        background: none;
-        color: #fff;
-    }
-}
-
 
 nav a{
     color: #0088B3;
@@ -311,14 +276,6 @@ nav a:hover{
 .ham-nav .button{
     margin: 20px auto 40px auto;
     display: none;
-}
-
-@media screen and (max-width: 1450px){
-    header h1{
-        margin-top: 250px;
-        margin-left: 80px;
-    }
-
 }
 
 @media screen and (max-width: 1260px){
@@ -384,7 +341,6 @@ nav a:hover{
 }
 
 @media screen and (max-width: 992px){
-
     .ham-nav input:checked ~ .ham-items {
         top: 19px;
       }
@@ -393,43 +349,50 @@ nav a:hover{
         width: 120px;
         margin-left: 16px;
     }
-
     .ham-nav label{
         margin-right: 4px;
-      }
-    .header-image-home{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-        
-    .header-image-home h1{
-        margin: 100px 0 0 0;
-    }
-
-    .header-cta{
-        float: none;
-        margin: 0;
     }
 
 }
-
-@media screen and (max-width: 768px){
-    .header-image-home{
-        background-position: center;
-    }
-}
-
-@media screen and (max-width: 600px){
-    .header-image-home h1{
-        margin-top: 150px;
-    }
-}
-
 
 main{
     flex: 1;
+}
+
+/* Home Page */
+
+.header-image-home{
+    box-sizing: border-box;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/AdobeStock_208752273-min.jpeg");
+    background-size: cover;
+    background-position: 10% 10%;
+    height: 100vh;
+    width: 100%;
+    border-bottom: 1px solid #FF8C1A;
+}
+
+.header-cta{
+    text-align: center;
+    float: right;
+    margin: 80px 80px 0 0;
+    color: #fff;
+}
+
+.header-cta p{
+    font-size: 21px;
+}
+
+.header-cta .button{
+    margin: 16px auto;
+    padding-top: 16px;
+}
+
+@media screen and (min-width: 992px){
+    .header-cta .button:hover{
+        background: none;
+        color: #fff;
+    }
 }
 
 .news{
@@ -530,6 +493,14 @@ main{
 .newsletter .flex{
     justify-content: space-between;
     margin-top: 28px;
+}
+
+
+@media screen and (max-width: 1450px){
+    .header-image-home h1{
+        margin-top: 250px;
+        margin-left: 80px;
+    }
 
 }
 
@@ -546,6 +517,21 @@ main{
 }
 
 @media screen and (max-width: 992px){
+    .header-image-home{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+        
+    .header-image-home h1{
+        margin: 100px 0 0 0;
+    }
+
+    .header-cta{
+        float: none;
+        margin: 0;
+    }
     .news{
         padding: 0 28px;
         justify-content: space-evenly;
@@ -569,6 +555,10 @@ main{
 }
 
 @media screen and (max-width: 768px){
+    .header-image-home{
+        background-position: center;
+    }
+
     .news{
         padding: 0px;
         grid-template-areas: 
@@ -584,6 +574,25 @@ main{
         display: block;
     }
 }
+
+@media screen and (max-width: 600px){
+    .header-image-home h1{
+        margin-top: 150px;
+    }
+}
+
+/* Visit Page*/
+.header-image-visit{
+    box-sizing: border-box;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/jesse-orrico-60373-min.jpg");
+    background-size: cover;
+    background-position: 10% 50%;
+    height: 600px;
+    width: 100%;
+    border-bottom: 1px solid #FF8C1A;
+}
+
 
 /* Footer */
 

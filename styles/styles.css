@@ -611,6 +611,10 @@ main{
     border-bottom: 1px solid #FF8C1A;
 }
 
+.header-image-visit h1{
+    margin: 300px 0 0 300px;
+}
+
 .visit{
     padding: 0 100px;
     justify-content: space-evenly;

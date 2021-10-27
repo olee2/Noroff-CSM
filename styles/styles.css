@@ -509,6 +509,7 @@ main{
 
 .newsletter input{
     box-sizing: border-box;
+    height: 67px;
     padding-left: 30px;
     border: 1px solid #0088B3;
     box-shadow: none;

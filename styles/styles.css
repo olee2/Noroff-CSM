@@ -609,6 +609,7 @@ main{
     height: 600px;
     width: 100%;
     border-bottom: 1px solid #FF8C1A;
+
 }
 
 .header-image-visit h1{
@@ -650,6 +651,10 @@ main{
 }
 
 @media screen and (max-width: 768px){
+    .header-image-visit h1{
+        margin: 300px auto;
+    }
+    
     .visit{
         grid-gap: 0;
         padding: 0;

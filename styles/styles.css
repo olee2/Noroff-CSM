@@ -23,7 +23,7 @@ h1{
 h2{
     font-size: 37px;
     font-weight: 600;
-    margin: 50px 0px 0 0;
+    margin: 37px 0px 0 0;
 }
 
 h3{
@@ -633,10 +633,6 @@ main{
     border: solid 1px #0088B3;
 }
 
-.visit h3{
-    margin-top: 50px;
-}
-
 .visit p{
     color: #505050;
 }
@@ -648,6 +644,22 @@ main{
 
 .visit .separate-section{
     margin: 50px 0;
+}
+
+.visit h3{
+    margin-top: 0;
+}
+
+.visit .separate{
+    display: block;
+    margin: 50px 0;
+}
+.visit .h2-line{
+    margin-bottom: 37px;
+}
+
+.visit .last-line{
+    display:none;
 }
 
 @media screen and (max-width: 768px){
@@ -668,24 +680,19 @@ main{
     }
 
     .visit section{
+        padding: 0 100px;
+    }
+
+    .visit .last-line{
+        display:block;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .visit section{
         padding: 0 16px;
     }
-
-    .visit .separate{
-        display: block;
-        margin: 50px 0;
-    }
-
-    .visit h3{
-        margin-top: 0;
-    }
-
-    .visit .h{
-        margin-bottom: 50px;
-    }
-
 }
-   
 
 /* Footer */
 

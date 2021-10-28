@@ -45,10 +45,11 @@ p{
 .link{
     color: #000;
     font-weight: 600;
+    text-decoration: underline;
 }
 
 .link:hover{
-    text-decoration: underline;
+    color: #0088B3;
 }
 
 .separate{
@@ -185,7 +186,7 @@ p{
     text-align: center;
     color: #000;
     height: 67px;
-    width: 201px;
+    padding: 16px;
 }
 
 .button1{
@@ -599,7 +600,7 @@ main{
     }
 }
 
-/* Visit Page*/
+/* Visit Page */
 .header-image-visit{
     box-sizing: border-box;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -609,7 +610,6 @@ main{
     height: 600px;
     width: 100%;
     border-bottom: 1px solid #FF8C1A;
-
 }
 
 .header-image-visit h1{
@@ -693,6 +693,126 @@ main{
         padding: 0 16px;
     }
 }
+
+/* Explore Page */
+
+.header-image-explore{
+    box-sizing: border-box;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/AdobeStock_208751620-min.jpeg");
+    background-size: cover;
+    background-position: 10% 10%;
+    height: 600px;
+    width: 100%;
+    border-bottom: 1px solid #FF8C1A;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-image-explore h1{
+    margin: 0 0 0 150px;
+}
+
+.explore{
+    flex-direction: column;
+    align-items: center;
+}
+
+.explore .separate{
+    display: block;
+    margin-top: 67px;
+}
+
+.kids .image-div{
+    background-image: url("../images/AdobeStock_170278874-min.jpeg");
+}
+
+.teachers .image-div{
+    background-image: url("../images/thisisengineering-raeng-TXxiFuQLBKQ-unsplash-min.jpg");
+}
+
+.researchers .image-div{
+    background-image: url("../images/thisisengineering-raeng-mF6gB6hV5OU-unsplash-min.jpg");
+}
+
+
+.explore-card{
+    margin-top: 37px;
+}
+
+.text-div, .image-div {
+    width: 490px;
+    height: 450px;
+
+}
+
+.image-div{
+    background-size: cover;
+    background-position: center;
+}
+
+.text-div{
+    box-sizing: border-box;
+    justify-content: center;
+    align-content: center;
+    background-color: #F2F9FB; 
+    flex-direction: column;
+    padding: 16px;
+}
+
+.text-div h2{
+    margin: 0;
+}
+
+.text-div .h2-line{
+    margin-bottom: 21px;
+}
+
+.text-div .button{
+    align-self: center;
+    margin-top: 28px;
+}
+
+.teachers .image-div{
+    background-position: 90% 0%;
+}
+
+@media screen and (max-width: 1260px){
+
+    .image-div, .text-div{
+        width: 600px;
+    }
+
+    .explore-card{
+        flex-direction: column;
+        align-content: flex-start;
+    }
+
+    .kids, .researchers{
+        flex-direction: column-reverse;
+    }
+
+    .text-div{
+        justify-content: flex-start;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .image-div, .text-div{
+        width: 100%;
+    }
+
+    .text-div{
+        background-color: #FFF;
+    }
+
+    .explore .separate{
+        width: 50%;
+    }
+}
+
+
 
 /* Footer */
 

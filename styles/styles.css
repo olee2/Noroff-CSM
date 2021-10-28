@@ -803,8 +803,13 @@ main{
         width: 100%;
     }
 
+    .explore-card{
+        margin: 37px 16px 0 16px;
+    }
+
     .text-div{
         background-color: #FFF;
+        padding-bottom: 0;
     }
 
     .explore .separate{

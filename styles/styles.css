@@ -783,6 +783,10 @@ main{
         width: 600px;
     }
 
+    .image-div{
+        height: 300px;
+    }
+
     .explore-card{
         flex-direction: column;
         align-content: flex-start;
@@ -799,21 +803,38 @@ main{
 }
 
 @media screen and (max-width: 768px){
+    .header-image-explore{
+        background-size: cover;
+        background-position: 70% 10%;
+    }
+
+
+    .header-image-explore h1{
+        margin: 0;
+    }
+
     .image-div, .text-div{
         width: 100%;
     }
 
     .explore-card{
-        margin: 37px 16px 0 16px;
+        margin: 37px 67px 0 67px;
     }
 
     .text-div{
         background-color: #FFF;
-        padding-bottom: 0;
+        padding: 16px 0;
     }
 
     .explore .separate{
         width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    .explore-card{
+        margin: 37px 16px 0 16px;
     }
 }
 

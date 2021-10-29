@@ -692,6 +692,14 @@ main{
     .visit section{
         padding: 0 16px;
     }
+
+    .visit-cta{
+        flex-direction: column;
+    }
+
+    .visit-cta .button{
+        margin-top: 16px;
+    }
 }
 
 /* Explore Page */

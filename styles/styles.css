@@ -267,6 +267,7 @@ header{
 }
 
 .sticky-header{
+    height: 87px;
     background-color: #FFF;
     justify-content: space-between;
     position: fixed;
@@ -390,6 +391,10 @@ nav a:hover{
     .ham-nav input:checked ~ .ham-items {
         top: 19px;
       }
+
+    .sticky-header{
+        height: 67px;
+    }
 
     .logo{
         width: 120px;
@@ -788,7 +793,8 @@ main{
 }
 
 .exhibitions .card{
-    max-width: 450px;
+    width: 450px;
+    max-width: none;
 }
 
 .exhibitions h2{
@@ -855,7 +861,7 @@ main{
     }
 
     .exhibitions .card{
-        max-width: 600px;
+        width: 600px;
     }
 
 }

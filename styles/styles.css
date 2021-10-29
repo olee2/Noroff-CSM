@@ -796,8 +796,9 @@ main{
 }
 
 .exhibitions .card img{
-    max-width: 100%;
-    height: 300px;
+    max-width: none;
+    width: 100%;
+    min-height: 300px;
 
 }
 
@@ -853,6 +854,10 @@ main{
         "e";
     }
 
+    .exhibitions .card{
+        max-width: 600px;
+    }
+
 }
 
 
@@ -881,13 +886,7 @@ main{
     }
 
     .exhibitions .card{
-        width: 100%;
-        max-width: none;
         box-shadow: none;
-    }
-
-    .exhibitions .card img{
-        height: auto;
     }
 }
 
@@ -911,6 +910,11 @@ main{
 
     .exhibitions p{
         padding: 0 16px;
+    }
+
+    .exhibitions .card{
+        width: 100%;
+        max-width: none;
     }
 }
 

@@ -23,7 +23,7 @@ h1{
 h2{
     font-size: 37px;
     font-weight: 600;
-    margin: 37px 0px 0 0;
+    margin: 37px 0 0 0;
 }
 
 h3{
@@ -442,7 +442,7 @@ main{
 
 .news{
     padding: 0 100px;
-    justify-content: space-evenly;
+    justify-content: center;
     grid-gap: 37px;
     grid-template-areas: 
     "h h h"
@@ -618,9 +618,9 @@ main{
 
 .visit{
     padding: 0 100px;
-    justify-content: space-evenly;
+    justify-content: center;
     grid-column-gap: 67px;
-    grid-template-columns: repeat(2, minmax(200px, 500px));
+    grid-template-columns: repeat(2, minmax(200px, 300px));
     grid-template-areas: 
     "h h"
     "a b"
@@ -773,8 +773,37 @@ main{
     margin-top: 28px;
 }
 
+.text-div .button:hover{
+    background-color: #F2F9FB;
+}
+
 .teachers .image-div{
     background-position: 90% 0%;
+}
+
+.exhibitions .card{
+    max-width: 450px;
+}
+
+.exhibitions h2{
+    margin: 0;
+}
+
+.exhibitions .card img{
+    max-width: 100%;
+    height: 300px;
+
+}
+
+.exhibitions{
+    padding: 0 100px;
+    justify-content: center;
+    grid-gap: 37px;
+    grid-template-areas:
+    "h h"
+    "a b"
+    "c d"
+    "e ..";
 }
 
 @media screen and (max-width: 1260px){
@@ -784,7 +813,7 @@ main{
     }
 
     .image-div{
-        height: 200px;
+        height: 300px;
     }
 
     .explore-card{
@@ -800,7 +829,27 @@ main{
         justify-content: flex-start;
         height: auto;
     }
+
+    .exhibitions{
+        padding: 0 37px;
+    }
 }
+
+@media screen and (max-width: 992px){
+    .exhibitions{
+        padding: 0px;
+        grid-template-areas:
+        "h"
+        "a"
+        "b"
+        "c" 
+        "d"
+        "e";
+    }
+
+}
+
+
 
 @media screen and (max-width: 768px){
     .header-image-explore{
@@ -821,22 +870,44 @@ main{
         margin: 37px 67px 0 67px;
     }
 
-    .text-div{
-        background-color: #FFF;
-        padding: 16px 0;
-    }
-
     .explore .separate{
         width: 50%;
     }
-}
 
+    .exhibitions .card{
+        width: 100%;
+        max-width: none;
+        box-shadow: none;
+    }
+
+    .exhibitions .card img{
+        height: auto;
+    }
+}
 
 @media screen and (max-width: 600px){
     .explore-card{
         margin: 37px 28px 0 28px;
     }
+
+    .image-div{
+        height: 200px;
+    }
+
+    .text-div{
+        background-color: #FFF;
+        padding: 16px 0;
+    }
+
+    .exhibitions .card{
+        padding: 0;
+    }
+
+    .exhibitions p{
+        padding: 0 16px;
+    }
 }
+
 
 
 

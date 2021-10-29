@@ -526,7 +526,6 @@ main{
 @media screen and (max-width: 1260px){
     .news{
         padding: 0 100px;
-        justify-content: space-evenly;
         grid-gap: 37px;
         grid-template-areas: 
         "h h"
@@ -553,7 +552,6 @@ main{
     }
     .news{
         padding: 0 28px;
-        justify-content: space-evenly;
         grid-gap: 37px;
     }
 

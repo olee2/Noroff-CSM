@@ -925,6 +925,55 @@ main{
 }
 
 
+/* About Page */
+
+.header-image-about{
+    box-sizing: border-box;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/AdobeStock_285772446-min.jpeg");
+    background-size: cover;
+    background-position: 10% 20%;
+    height: 600px;
+    width: 100%;
+    border-bottom: 1px solid #FF8C1A;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-image-about h1{
+    align-self: center;
+    margin: 100px 0 0 0;
+}
+
+.about {
+    padding: 0 100px;
+    max-width: 980px;
+    align-self: center;
+}
+
+.about img, .involved img{
+    max-width: 100%;
+}
+
+.about div{
+    margin-bottom: 37px;
+}
+
+.involved{
+    justify-content: center;
+    grid-gap: 37px;
+    grid-template-areas: 
+    "h h h"
+    "a b c"
+}
+
+.involved .card{
+    justify-content: space-between;
+}
+
+.involved .btn{
+    margin: 0 16px;
+}
 
 
 /* Footer */

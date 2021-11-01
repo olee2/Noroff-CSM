@@ -161,6 +161,10 @@ p{
     padding: 0 16px;
 }
 
+.cta h2{
+    margin-top: 0;
+    margin-right: 16px;
+}
 
 .align-self-center{
     align-self: center;
@@ -252,6 +256,14 @@ p{
 
     .separate-section{
         margin: 50px 0;
+    }
+
+    .cta{
+        flex-direction: column;
+    }
+
+    .cta .button{
+        margin-top: 16px;
     }
 }
 
@@ -621,9 +633,9 @@ main{
 
 .visit{
     padding: 0 100px;
-    justify-content: center;
+    justify-content: space-around;
     grid-column-gap: 67px;
-    grid-template-columns: repeat(2, minmax(200px, 300px));
+    grid-template-columns: repeat(2, minmax(200px, 500px));
     grid-template-areas: 
     "h h"
     "a b"
@@ -638,11 +650,6 @@ main{
 
 .visit p{
     color: #505050;
-}
-
-.visit-cta h2{
-    margin-top: 0;
-    margin-right: 16px;
 }
 
 .visit .separate-section{
@@ -694,14 +701,6 @@ main{
 @media screen and (max-width: 600px){
     .visit section{
         padding: 0 16px;
-    }
-
-    .visit-cta{
-        flex-direction: column;
-    }
-
-    .visit-cta .button{
-        margin-top: 16px;
     }
 }
 

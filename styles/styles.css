@@ -58,7 +58,8 @@ p{
 }
 
 .separate-section{
-    margin: 50px 100px;
+    margin: 50px 0;
+    width: 980px;
 }
 
 .line-color{
@@ -169,12 +170,14 @@ p{
 
 .container{
     max-width: 980px;
+    margin: 0 37px;
 }
 
 .card{
     box-sizing: border-box;
     flex-direction: column;
     padding-bottom: 16px;
+    max-width: 600px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px;
 }
 
@@ -272,6 +275,17 @@ p{
         margin: 50px 16px;
     }
 
+    .three-grid{ 
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "h"
+        "a"
+        "l1"
+        "b"
+        "l2"
+        "c";
+    }
+
     .five-grid{
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -281,6 +295,10 @@ p{
         "c" 
         "d"
         "e";
+    }
+
+    .container{
+        margin: 0 16px;
     }
 }
 
@@ -816,10 +834,6 @@ main{
         justify-content: flex-start;
         height: auto;
     }
-
-    .exhibitions{
-        padding: 0 37px;
-    }
 }
 
 @media screen and (max-width: 768px){
@@ -889,11 +903,6 @@ main{
 
 .header-image-about h1{
     margin: 100px 0 0 0;
-}
-
-.about {
-    padding: 0 100px;
-    max-width: 980px;
 }
 
 .about img, .involved img{

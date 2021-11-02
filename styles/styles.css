@@ -127,6 +127,11 @@ p{
     padding-top: 16px;
 }
 
+.meta-data{
+    font-size: 12px;
+    margin-top: 67px;
+}
+
 .active{
     text-decoration: underline;
     text-decoration-color: #FF8C1A;
@@ -142,6 +147,28 @@ p{
 
 .grid{
     display: grid;
+    grid-gap: 37px;
+    justify-content: center;
+}
+
+.three-grid{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "h h h"
+    "a b c";
+}
+
+.five-grid{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "h h"
+    "a b"
+    "c d"
+    "e ..";
+}
+
+.container{
+    max-width: 980px;
 }
 
 .card{
@@ -149,7 +176,10 @@ p{
     flex-direction: column;
     padding-bottom: 16px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px;
-    max-width: 350px;
+}
+
+.card img{
+    max-width: 100%;
 }
 
 .card h3, .card p{
@@ -161,12 +191,26 @@ p{
     margin-right: 16px;
 }
 
+.header-image{
+    border-bottom: 1px solid #FF8C1A;
+    background-size: cover;
+}
+
+.header-image-height{
+    height: 600px;
+}
+
+
 .align-self-center{
     align-self: center;
 }
 
 .align-items-center{
     align-items: center;
+}
+
+.justify-content-between{
+    justify-content: space-between;
 }
 
 .justify-content-center{
@@ -213,19 +257,47 @@ p{
     .separate-section{
         margin: 50px 37px;
     }
+
+    .three-grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "h h"
+        "a b"
+        "c .."
+    }
 }
 
 @media screen and (max-width: 992px){
     .separate-section{
         margin: 50px 16px;
     }
+
+    .five-grid{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "h"
+        "a"
+        "b"
+        "c" 
+        "d"
+        "e";
+    }
 }
 
 @media screen and (max-width: 768px){
-    .card{
-        max-width: 100%;
-        box-shadow: none;
-        padding: 0 28px;
+    .three-grid{ 
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "h"
+        "a"
+        "l1"
+        "b"
+        "l2"
+        "c";
+    }
+
+    .separate{
+        display: block;
     }
 }
 
@@ -240,14 +312,7 @@ p{
     
     h3{
         font-size: 21px;
-    }
-
-    .card h3, .card p{
-        padding: 0px;
-    }
-
-    .card img{
-        max-width: 100%;
+        margin: 21px 0;
     }
 
     .separate-section{
@@ -420,14 +485,11 @@ main{
 /* Home Page */
 
 .header-image-home{
-    box-sizing: border-box;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/AdobeStock_208752273-min.jpeg");
-    background-size: cover;
     background-position: 10% 10%;
     height: 100vh;
-    width: 100%;
-    border-bottom: 1px solid #FF8C1A;
+    box-sizing: border-box;
 }
 
 .header-cta{
@@ -453,19 +515,10 @@ main{
     }
 }
 
-.news{
-    padding: 0 37px;
-    justify-content: center;
-    grid-gap: 37px;
-    grid-template-areas: 
-    "h h h"
-    "a b c";
-}
 
 .connect{
     color: #0088B3;
-    justify-content: space-around;
-    margin: 0 100px;
+    width: 100%;
 }
 
 .connect .h2-line{
@@ -474,12 +527,6 @@ main{
 
 .connect h2{
     margin-top: 0;
-}
-
-.social{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .social div{
@@ -493,9 +540,7 @@ main{
 }
 
 .newsletter{
-    flex-direction: column;
     max-width: 100%;
-    
 }
 
 .newsletter label::after {
@@ -536,17 +581,6 @@ main{
 
 }
 
-@media screen and (max-width: 1260px){
-    .news{
-        padding: 0 100px;
-        grid-gap: 37px;
-        grid-template-areas: 
-        "h h"
-        "a b"
-        "c .."
-    }
-}
-
 @media screen and (max-width: 992px){
     .header-image-home{
         display: flex;
@@ -562,10 +596,6 @@ main{
     .header-cta{
         float: none;
         margin: 0;
-    }
-    .news{
-        padding: 0 28px;
-        grid-gap: 37px;
     }
 
     .newsletter{
@@ -588,26 +618,6 @@ main{
     .header-image-home{
         background-position: center;
     }
-
-    .news{
-        padding: 0px;
-        grid-template-areas: 
-        "h"
-        "a"
-        "l1"
-        "b"
-        "l2"
-        "c";
-    }
-
-    .news .card{
-        max-width: 600px;
-        box-shadow: none;
-    }
-
-    .news .separate{
-        display: block;
-    }
 }
 
 @media screen and (max-width: 600px){
@@ -618,14 +628,10 @@ main{
 
 /* Visit Page */
 .header-image-visit{
-    box-sizing: border-box;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/jesse-orrico-60373-min.jpg");
     background-size: cover;
     background-position: 10% 50%;
-    height: 600px;
-    width: 100%;
-    border-bottom: 1px solid #FF8C1A;
 }
 
 .header-image-visit h1{
@@ -708,25 +714,13 @@ main{
 /* Explore Page */
 
 .header-image-explore{
-    box-sizing: border-box;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/AdobeStock_208751620-min.jpeg");
-    background-size: cover;
     background-position: 10% 10%;
-    height: 600px;
-    width: 100%;
-    border-bottom: 1px solid #FF8C1A;
-    justify-content: center;
-    align-items: center;
 }
 
 .header-image-explore h1{
     margin: 0 0 0 150px;
-}
-
-.explore{
-    flex-direction: column;
-    align-items: center;
 }
 
 .explore .separate{
@@ -764,10 +758,7 @@ main{
 
 .text-div{
     box-sizing: border-box;
-    justify-content: center;
-    align-content: center;
     background-color: #F2F9FB; 
-    flex-direction: column;
     padding: 16px;
 }
 
@@ -792,11 +783,6 @@ main{
     background-position: 90% 0%;
 }
 
-.exhibitions .card{
-    width: 450px;
-    max-width: none;
-}
-
 .exhibitions h2{
     margin: 0;
 }
@@ -804,20 +790,8 @@ main{
 .exhibitions .card img{
     max-width: none;
     width: 100%;
-    min-height: 300px;
-
 }
 
-.exhibitions{
-    padding: 0 100px;
-    justify-content: center;
-    grid-gap: 37px;
-    grid-template-areas:
-    "h h"
-    "a b"
-    "c d"
-    "e ..";
-}
 
 @media screen and (max-width: 1260px){
 
@@ -847,26 +821,6 @@ main{
         padding: 0 37px;
     }
 }
-
-@media screen and (max-width: 992px){
-    .exhibitions{
-        padding: 0px;
-        grid-template-areas:
-        "h"
-        "a"
-        "b"
-        "c" 
-        "d"
-        "e";
-    }
-
-    .exhibitions .card{
-        width: 600px;
-    }
-
-}
-
-
 
 @media screen and (max-width: 768px){
     .header-image-explore{
@@ -928,27 +882,18 @@ main{
 /* About Page */
 
 .header-image-about{
-    box-sizing: border-box;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../images/AdobeStock_285772446-min.jpeg");
-    background-size: cover;
     background-position: 10% 20%;
-    height: 600px;
-    width: 100%;
-    border-bottom: 1px solid #FF8C1A;
-    align-items: center;
-    justify-content: center;
 }
 
 .header-image-about h1{
-    align-self: center;
     margin: 100px 0 0 0;
 }
 
 .about {
     padding: 0 100px;
     max-width: 980px;
-    align-self: center;
 }
 
 .about img, .involved img{
@@ -957,18 +902,6 @@ main{
 
 .about div{
     margin-bottom: 37px;
-}
-
-.involved{
-    justify-content: center;
-    grid-gap: 37px;
-    grid-template-areas: 
-    "h h h"
-    "a b c"
-}
-
-.involved .card{
-    justify-content: space-between;
 }
 
 .involved .btn{

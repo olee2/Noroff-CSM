@@ -42,6 +42,10 @@ p{
     margin: 0;
 }
 
+hr{
+    box-sizing: border-box;
+}
+
 .link{
     color: #000;
     font-weight: 600;
@@ -92,6 +96,10 @@ p{
     grid-area: e;
 }
 
+.f{
+    grid-area: f;
+}
+
 .h{
     grid-area: h;
 }
@@ -106,6 +114,14 @@ p{
 
 .line3{
     grid-area: l3;
+}
+
+.line4{
+    grid-area: l4;
+}
+
+.line5{
+    grid-area: l5;
 }
 
 .bold{
@@ -220,6 +236,10 @@ p{
     justify-content: center;
 }
 
+.justify-content-around{
+    justify-content: space-around;
+}
+
 .text-align-center{
     text-align: center;
 }
@@ -257,10 +277,6 @@ p{
 }
 
 @media screen and (max-width: 1260px){
-    .separate-section{
-        margin: 50px 37px;
-    }
-
     .three-grid{
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: 
@@ -656,15 +672,14 @@ main{
 }
 
 .visit{
-    padding: 0 100px;
-    justify-content: space-around;
-    grid-column-gap: 67px;
-    grid-template-columns: repeat(2, minmax(200px, 500px));
+    grid-row-gap: 50px;
     grid-template-areas: 
     "h h"
-    "a b"
-    "l1 l1"
-    "c c";
+    "a d"
+    "l1 l2"
+    "b f"
+    "l3 l4"
+    "e c";
 }
 
 .visit img{
@@ -676,6 +691,7 @@ main{
     color: #505050;
 }
 
+
 .visit .separate-section{
     margin: 50px 0;
 }
@@ -686,7 +702,8 @@ main{
 
 .visit .separate{
     display: block;
-    margin: 50px 0;
+    justify-self: center;
+    margin: 0;
 }
 .visit .h2-line{
     margin-bottom: 37px;
@@ -702,30 +719,29 @@ main{
     }
     
     .visit{
-        grid-gap: 0;
         padding: 0;
         grid-template-columns: auto;
         grid-template-areas: 
         "h"
         "a"
-        "b"
         "l1"
+        "d"
+        "l2"
+        "b" 
+        "l3"
+        "f"
+        "l4"
+        "e" 
+        "l5"
         "c";
     }
 
-    .visit section{
-        padding: 0 100px;
-    }
-
     .visit .last-line{
-        display:block;
+        display: block;
     }
-}
 
-@media screen and (max-width: 600px){
-    .visit section{
-        padding: 0 16px;
-    }
+
+
 }
 
 /* Explore Page */
@@ -763,9 +779,8 @@ main{
 }
 
 .text-div, .image-div {
-    width: 490px;
+    width: 496px;
     height: 450px;
-
 }
 
 .image-div{
@@ -810,7 +825,7 @@ main{
 }
 
 
-@media screen and (max-width: 1260px){
+@media screen and (max-width: 992px){
 
     .image-div, .text-div{
         width: 600px;
@@ -847,48 +862,17 @@ main{
     }
 
     .image-div, .text-div{
-        width: 100%;
-    }
-
-    .explore-card{
-        margin: 37px 67px 0 67px;
+        max-width: 100%;
+        width: auto;
     }
 
     .explore .separate{
         width: 50%;
     }
-
-    .exhibitions .card{
-        box-shadow: none;
-    }
 }
 
 @media screen and (max-width: 600px){
-    .explore-card{
-        margin: 37px 28px 0 28px;
-    }
-
-    .image-div{
-        height: 200px;
-    }
-
-    .text-div{
-        background-color: #FFF;
-        padding: 16px 0;
-    }
-
-    .exhibitions .card{
-        padding: 0;
-    }
-
-    .exhibitions p{
-        padding: 0 16px;
-    }
-
-    .exhibitions .card{
-        width: 100%;
-        max-width: none;
-    }
+ 
 }
 
 
@@ -902,6 +886,10 @@ main{
 
 .header-image-about h1{
     margin: 100px 0 0 0;
+}
+
+.about{
+    max-width: 992px;
 }
 
 .about img, .involved img{

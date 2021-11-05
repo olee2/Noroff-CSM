@@ -23,7 +23,7 @@ h1{
 h2{
     font-size: 37px;
     font-weight: 600;
-    margin: 37px 0 0 0;
+    margin: 0;
 }
 
 h3{
@@ -46,6 +46,10 @@ hr{
     box-sizing: border-box;
 }
 
+.top-h2{
+    margin
+}
+
 .link{
     color: #000;
     font-weight: 600;
@@ -57,8 +61,10 @@ hr{
 }
 
 .separate{
-    width: 150px;
+    width: 50px;
+    margin: 0;
     display: none;
+    justify-self: center;
 }
 
 .separate-section{
@@ -134,6 +140,10 @@ hr{
 
 .regular{
     font-weight: 400;
+}
+
+.margin-top-37px{
+    margin-top: 37px;
 }
 
 .margin-bottom-16px{
@@ -291,6 +301,10 @@ hr{
         margin: 50px 16px;
     }
 
+    .separate{
+        display: block;
+    }
+
     .three-grid{ 
         grid-template-columns: 1fr;
         grid-template-areas: 
@@ -319,20 +333,6 @@ hr{
 }
 
 @media screen and (max-width: 768px){
-    .three-grid{ 
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "h"
-        "a"
-        "l1"
-        "b"
-        "l2"
-        "c";
-    }
-
-    .separate{
-        display: block;
-    }
 }
 
 @media screen and (max-width: 600px){
@@ -347,6 +347,15 @@ hr{
     h3{
         font-size: 21px;
         margin: 21px 0;
+    }
+
+    .container{
+        margin: 0;
+    }
+
+    .card{
+        width: 100%;
+
     }
 
     .separate-section{
@@ -638,7 +647,6 @@ main{
     .connect{
         flex-direction: column-reverse;
         align-items: center;
-        margin: 16px;
     }
 
     .connect .separate{
@@ -672,7 +680,6 @@ main{
 }
 
 .visit{
-    grid-row-gap: 50px;
     grid-template-areas: 
     "h h"
     "a d"
@@ -704,9 +711,6 @@ main{
     display: block;
     justify-self: center;
     margin: 0;
-}
-.visit .h2-line{
-    margin-bottom: 37px;
 }
 
 .visit .last-line{
@@ -756,11 +760,6 @@ main{
     margin: 0 0 0 150px;
 }
 
-.explore .separate{
-    display: block;
-    margin-top: 67px;
-}
-
 .kids .image-div{
     background-image: url("../images/AdobeStock_170278874-min.jpeg");
 }
@@ -778,9 +777,18 @@ main{
     margin-top: 37px;
 }
 
+.text-div div{
+    margin: 28px 0;
+}
+
+
+.explore .separate{
+    display: block;
+}
+
 .text-div, .image-div {
     width: 496px;
-    height: 450px;
+
 }
 
 .image-div{
@@ -792,14 +800,6 @@ main{
     box-sizing: border-box;
     background-color: #F2F9FB; 
     padding: 16px;
-}
-
-.text-div h2{
-    margin: 0;
-}
-
-.text-div .h2-line{
-    margin-bottom: 21px;
 }
 
 .text-div .btn{
@@ -866,15 +866,7 @@ main{
         width: auto;
     }
 
-    .explore .separate{
-        width: 50%;
-    }
 }
-
-@media screen and (max-width: 600px){
- 
-}
-
 
 /* About Page */
 

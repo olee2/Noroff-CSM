@@ -46,9 +46,11 @@ hr{
     box-sizing: border-box;
 }
 
-.top-h2{
-    margin
+input:focus, textarea:focus{
+    outline-style: groove;
+    outline-color: #0088B3;
 }
+
 
 .link{
     color: #000;
@@ -79,7 +81,8 @@ hr{
 .h2-line{
     width: 50px;
     border: 1px solid #0088B3;
-    margin-top: 0;
+    margin-top: 16px;
+    display: none;
 }
 
 .a{
@@ -162,6 +165,11 @@ hr{
 .active{
     text-decoration: underline;
     text-decoration-color: #FF8C1A;
+    text-decoration-thickness: 2px ;
+}
+
+.active:hover{
+    text-decoration-thickness: 2px;
 }
 
 .flex{
@@ -684,6 +692,7 @@ main{
 }
 
 .visit{
+    grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
     "h h"
     "a d"
@@ -792,7 +801,7 @@ main{
 
 .text-div, .image-div {
     width: 496px;
-
+    height: 530px;
 }
 
 .image-div{
@@ -842,6 +851,8 @@ main{
     .explore-card{
         flex-direction: column;
         align-content: flex-start;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px;
+   
     }
 
     .kids, .researchers{
@@ -851,6 +862,7 @@ main{
     .text-div{
         justify-content: flex-start;
         height: auto;
+        background-color: #FFF;
     }
 }
 
@@ -860,13 +872,12 @@ main{
         background-position: 70% 10%;
     }
 
-
     .header-image-explore h1{
         margin: 0;
     }
 
     .image-div, .text-div{
-        max-width: 100%;
+        max-width: 600px;
         width: auto;
     }
 
@@ -875,7 +886,7 @@ main{
 /* About Page */
 
 .header-image-about{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/AdobeStock_285772446-min.jpeg");
     background-position: 10% 20%;
 }
@@ -907,6 +918,90 @@ main{
     }
 }
 
+
+/* Contact Page */
+
+.header-image-contact{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/AdobeStock_395371205-min.jpeg");
+    background-position: 10% 20%;
+}
+
+.header-image-contact h1{
+    margin: 100px 0 0 0;
+}
+
+.contact{
+    grid-column-gap: 67px;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-areas: 
+    "a a a a a b b b b b";
+}
+
+.contact input, .contact textarea{
+    margin-bottom: 16px;
+    border: solid 1px #0088B3;
+}
+
+.contact label{
+    margin-bottom: 3px;
+}
+
+.contact input{
+    height: 28px;
+}
+
+.contact form{
+    height: 100%;
+}
+
+.contact textarea{
+    flex: 1;
+}
+
+.icon{
+    width: 50px;
+    margin-right: 16px;
+}
+
+.phone{
+    margin-top: 35px;
+}
+
+.address{
+    margin-top: 25px;
+}
+
+.contact .btn{
+    background-color: #0088B3;
+    color: #FFF;
+    border-color: #0088B3;
+    width: 50%;
+    align-self: center;
+}
+
+.contact .btn:hover{
+
+}
+
+.map{
+    max-width: 100%;
+    border: solid 1px #0088B3;
+    margin-top: 35px;
+}
+
+@media screen and (max-width: 992px){
+    .contact{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "a"
+        "b";
+    }
+
+    .contact section{
+        max-width: 600px;
+    }
+}
 
 /* Footer */
 

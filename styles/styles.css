@@ -306,7 +306,7 @@ input:focus, textarea:focus{
 
 @media screen and (max-width: 992px){
     .separate-section{
-        margin: 50px 16px;
+        margin: 50px 0px;
     }
 
     .separate{
@@ -756,11 +756,13 @@ main{
     .visit .last-line{
         display: block;
     }
-
-
-
 }
 
+@media screen and (max-width: 600px){
+    .visit{
+        margin: 0 16px;
+    }
+}
 /* Explore Page */
 
 .header-image-explore{
@@ -959,6 +961,10 @@ main{
     flex: 1;
 }
 
+.contact .separate-section{
+    display: none;
+}
+
 .icon{
     width: 50px;
     margin-right: 16px;
@@ -995,12 +1001,25 @@ main{
         grid-template-columns: 1fr;
         grid-template-areas: 
         "a"
+        "l1"
         "b";
+    }
+
+    .contact .separate-section{
+        display: block;
+        margin: 0;
     }
 
     .contact section{
         max-width: 600px;
+        min-height: 600px;
+        margin: 0 16px;
     }
+
+    .contact-info h2{
+        margin-top: 0;
+    }
+
 }
 
 /* Footer */

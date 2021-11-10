@@ -81,8 +81,8 @@ input:focus, textarea:focus{
 .h2-line{
     width: 50px;
     border: 1px solid #0088B3;
-    margin-top: 16px;
-    display: none;
+    margin-top: 8px;
+ 
 }
 
 .a{
@@ -971,7 +971,7 @@ main{
 }
 
 .phone{
-    margin-top: 35px;
+    margin-top: 25px;
 }
 
 .address{
@@ -987,13 +987,14 @@ main{
 }
 
 .contact .btn:hover{
-
+    background-color: #fff;
+    color: #000;
 }
 
 .map{
     max-width: 100%;
     border: solid 1px #0088B3;
-    margin-top: 35px;
+    margin-top: 38px;
 }
 
 @media screen and (max-width: 992px){
@@ -1018,6 +1019,11 @@ main{
 
     .contact-info h2{
         margin-top: 0;
+    }
+
+    .contact .btn:hover{
+        background-color: #0088B3;
+        color:#FFF;
     }
 
 }
@@ -1072,7 +1078,6 @@ footer .active{
     footer{
         flex-direction: column-reverse;
         justify-content: space-around;
-        height: 150px;
         padding: 12px;
         
     }
@@ -1089,7 +1094,6 @@ footer .active{
 @media only screen and (max-width: 600px){
     footer{
         padding: 12px 12px;
-        height: 120px;
     }
 
     .footer-links{

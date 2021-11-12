@@ -329,9 +329,13 @@ input:focus, textarea:focus{
         grid-template-areas:
         "h"
         "a"
+        "l1"
         "b"
+        "l2"
         "c" 
+        "l3"
         "d"
+        "l4"
         "e";
     }
 

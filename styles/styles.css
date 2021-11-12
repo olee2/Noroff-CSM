@@ -1074,8 +1074,9 @@ footer{
     text-decoration: underline;
 }
 
-footer .active{
+footer .footer-links .active{
     text-decoration-color: #FFF;
+    text-decoration-thickness: 2px;
 }
 
 @media only screen and (max-width: 1350px){

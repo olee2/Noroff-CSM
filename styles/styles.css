@@ -132,9 +132,6 @@ input:focus, textarea:focus{
     grid-area: l5;
 }
 
-.bold{
-    font-weight: 700;
-}
 
 .semi-bold{
     font-weight: 600;
@@ -285,10 +282,6 @@ input:focus, textarea:focus{
     }
 }
 
-.blue-btn{
-    background-color: #19C9FF ;
-}
-
 @media screen and (max-width: 1260px){
     .three-grid{
         grid-template-columns: repeat(2, 1fr);
@@ -337,9 +330,6 @@ input:focus, textarea:focus{
     .container{
         margin: 0 16px;
     }
-}
-
-@media screen and (max-width: 768px){
 }
 
 @media screen and (max-width: 600px){
@@ -565,7 +555,6 @@ main{
     }
 }
 
-
 .connect{
     color: #0088B3;    
 }
@@ -582,10 +571,6 @@ main{
     justify-content: space-between;
     width: 100%;
     margin-top: 28px;
-}
-
-.twitter{
-    margin: 0 16px;
 }
 
 .newsletter{
@@ -691,6 +676,7 @@ main{
 }
 
 .visit{
+    grid-column-gap: 67px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
     "h h"
@@ -786,15 +772,9 @@ main{
     background-image: url("../images/thisisengineering-raeng-mF6gB6hV5OU-unsplash-min.jpg");
 }
 
-
-.explore-card{
-    margin-top: 37px;
-}
-
 .text-div div{
     margin-bottom: 28px;
 }
-
 
 .explore .separate{
     display: block;
@@ -881,7 +861,6 @@ main{
         max-width: 600px;
         width: auto;
     }
-
 }
 
 /* About Page */
@@ -918,7 +897,6 @@ main{
         margin-right: 16px;
     }
 }
-
 
 /* Contact Page */
 

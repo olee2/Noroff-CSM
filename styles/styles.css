@@ -51,7 +51,6 @@ input:focus, textarea:focus{
     outline-color: #0088B3;
 }
 
-
 .link{
     color: #000;
     font-weight: 600;
@@ -139,10 +138,6 @@ input:focus, textarea:focus{
 
 .semi-bold{
     font-weight: 600;
-}
-
-.regular{
-    font-weight: 400;
 }
 
 .margin-top-37px{
@@ -826,7 +821,7 @@ main{
     margin-top: 28px;
 }
 
-.text-div .button:hover{
+.text-div .btn:hover{
     background-color: #F2F9FB;
 }
 

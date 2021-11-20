@@ -17,6 +17,7 @@ a{
 h1{
     color: #FFF;
     font-size: 50px;
+    letter-spacing: 3px;
     text-shadow: 1px 1px 1px #000;
 }
 
@@ -143,6 +144,10 @@ input:focus, textarea:focus{
 
 .margin-bottom-16px{
     margin-bottom: 16px;
+}
+
+.margin-header{
+    margin-top: 87px;
 }
 
 .padding-top-16px{
@@ -282,6 +287,12 @@ input:focus, textarea:focus{
     }
 }
 
+@media screen and (min-width: 1650px){
+    .header-image-height{
+        height: 800px;
+    }
+}
+
 @media screen and (max-width: 1260px){
     .three-grid{
         grid-template-columns: repeat(2, 1fr);
@@ -329,6 +340,10 @@ input:focus, textarea:focus{
 
     .container{
         margin: 0 16px;
+    }
+
+    .margin-header{
+        margin-top: 67px;
     }
 }
 
@@ -523,22 +538,21 @@ main{
 .header-image-home{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/AdobeStock_208752273-min.jpeg");
-    background-position: 10% 10%;
+    background-position: center 10%;
     height: 100vh;
     box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .header-image-home h1{
-    margin-top: 350px;
-    margin-left: 100px;
+    margin-top: 200px;
 }
-
-
 
 .header-cta{
     text-align: center;
-    float: right;
-    margin: 80px 80px 0 0;
     color: #fff;
 }
 
@@ -618,31 +632,7 @@ main{
 }
 
 
-@media screen and (max-width: 1450px){
-    .header-image-home h1{
-        margin-top: 300px;
-        margin-left: 80px;
-    }
-
-}
-
 @media screen and (max-width: 992px){
-    .header-image-home{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-        
-    .header-image-home h1{
-        margin: 100px 0 0 0;
-    }
-
-    .header-cta{
-        float: none;
-        margin: 0;
-    }
-
     .newsletter{
         text-align: center;
     }
@@ -658,12 +648,6 @@ main{
     }
 }
 
-@media screen and (max-width: 768px){
-    .header-image-home{
-        background-position: center;
-    }
-}
-
 @media screen and (max-width: 600px){
     .header-image-home h1{
         margin-top: 150px;
@@ -676,14 +660,10 @@ main{
 
 /* Visit Page */
 .header-image-visit{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../images/jesse-orrico-60373-min.jpg");
     background-size: cover;
     background-position: 10% 50%;
-}
-
-.header-image-visit h1{
-    margin: 300px 0 0 300px;
 }
 
 .visit{
@@ -765,10 +745,6 @@ main{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/AdobeStock_208751620-min.jpeg");
     background-position: 10% 10%;
-}
-
-.header-image-explore h1{
-    margin: 0 0 0 150px;
 }
 
 .kids .image-div{
@@ -883,10 +859,6 @@ main{
     background-position: 10% 20%;
 }
 
-.header-image-about h1{
-    margin: 100px 0 0 0;
-}
-
 .about{
     max-width: 992px;
 }
@@ -916,10 +888,6 @@ main{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/AdobeStock_395371205-min.jpeg");
     background-position: 10% 20%;
-}
-
-.header-image-contact h1{
-    margin: 100px 0 0 0;
 }
 
 .contact{

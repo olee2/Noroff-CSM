@@ -344,6 +344,7 @@ input:focus, textarea:focus{
     h3{
         font-size: 21px;
         margin: 21px 0;
+        font-weight: 700;
     }
 
     .container{
@@ -779,6 +780,7 @@ main{
 .explore .separate{
     display: block;
 }
+
 
 .text-div, .image-div {
     width: 496px;

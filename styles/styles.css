@@ -542,10 +542,6 @@ main{
     background-position: center 10%;
     height: 100vh;
     box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
 }
 
 .header-image-home h1{
@@ -586,7 +582,6 @@ main{
 }
 
 .social div{
-    justify-content: space-between;
     width: 100%;
     margin-top: 28px;
 }
@@ -624,7 +619,6 @@ main{
 }
 
 .newsletter .flex{
-    justify-content: space-between;
     margin-top: 28px;
 }
 
@@ -708,10 +702,6 @@ main{
 }
 
 @media screen and (max-width: 768px){
-    .header-image-visit h1{
-        margin: 300px auto;
-    }
-    
     .visit{
         padding: 0;
         grid-template-columns: minmax(0, 600px);
@@ -840,10 +830,6 @@ main{
     .header-image-explore{
         background-size: cover;
         background-position: 70% 10%;
-    }
-
-    .header-image-explore h1{
-        margin: 0;
     }
 
     .image-div, .text-div{

@@ -350,6 +350,7 @@ input:focus, textarea:focus{
 @media screen and (max-width: 600px){
     h1{
         font-size: 37px;
+        letter-spacing: 2px;
     }
     
     h2{

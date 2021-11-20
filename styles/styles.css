@@ -832,6 +832,7 @@ main{
         background-position: 70% 10%;
     }
 
+
     .image-div, .text-div{
         max-width: 600px;
         width: auto;
@@ -979,15 +980,14 @@ footer{
     margin-top: 50px;
     padding: 12px 100px;
     justify-content: space-between;
-}
-
-footer p, footer a{
+    font-size: 21px;
     font-weight: 700;
 }
 
 .copyright{
     color: #FFF;
     align-items: center;
+
 }
 
 .copyright img{
@@ -1023,10 +1023,11 @@ footer .footer-links .active{
     text-decoration-thickness: 2px;
 }
 
-@media only screen and (max-width: 1350px){
+@media only screen and (max-width: 1400px){
     footer{
         flex-direction: column-reverse;
         justify-content: space-around;
+        align-items: center;
         padding: 12px;
         
     }
@@ -1034,11 +1035,6 @@ footer .footer-links .active{
     .social-media{
         margin: 12px;
     }
-
-    .social-media, .footer-links, .copyright{
-        align-self: center;
-    }
-    
 }
 @media only screen and (max-width: 600px){
     footer{

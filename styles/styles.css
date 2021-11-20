@@ -375,11 +375,6 @@ header{
     flex-direction: column;
 }
 
-.header-image-home h1{
-    margin-top: 230px;
-    margin-left: 100px;
-}
-
 .sticky-header{
     height: 87px;
     background-color: #FFF;
@@ -392,7 +387,7 @@ header{
 
 nav a{
     color: #0088B3;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 nav a:hover{
@@ -533,6 +528,13 @@ main{
     box-sizing: border-box;
 }
 
+.header-image-home h1{
+    margin-top: 350px;
+    margin-left: 100px;
+}
+
+
+
 .header-cta{
     text-align: center;
     float: right;
@@ -579,8 +581,7 @@ main{
 }
 
 .newsletter label, .social p{
-    font-size: 21px;
-    font-weight: 700;
+    color: #505050;
 }
 
 .newsletter label::after {
@@ -612,10 +613,14 @@ main{
     margin-top: 28px;
 }
 
+.twitter{
+    margin: 0 16px;
+}
+
 
 @media screen and (max-width: 1450px){
     .header-image-home h1{
-        margin-top: 250px;
+        margin-top: 300px;
         margin-left: 80px;
     }
 
@@ -728,7 +733,7 @@ main{
     
     .visit{
         padding: 0;
-        grid-template-columns: auto;
+        grid-template-columns: minmax(0, 600px);
         grid-template-areas: 
         "h"
         "a"

@@ -978,12 +978,16 @@ footer{
     background-color: #0088B3;
     margin-top: 50px;
     padding: 12px 100px;
-    justify-content: space-between;}
+    justify-content: space-between;
+}
+
+footer p, footer a{
+    font-weight: 700;
+}
 
 .copyright{
     color: #FFF;
     align-items: center;
-
 }
 
 .copyright img{
@@ -1047,10 +1051,6 @@ footer .footer-links .active{
 
     .social-media{
         padding: 12px 0;
-    }
-
-    .copyright p, .footer-links a{
-        font-size: 12px;
     }
 
     .copyright img, .social-media img{

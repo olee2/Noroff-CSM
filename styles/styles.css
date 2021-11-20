@@ -984,6 +984,10 @@ footer{
     font-weight: 700;
 }
 
+footer a{
+    font-size: 21px;
+}
+
 .copyright{
     color: #FFF;
     align-items: center;

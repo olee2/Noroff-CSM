@@ -578,6 +578,11 @@ main{
     max-width: 100%;
 }
 
+.newsletter label, .social p{
+    font-size: 21px;
+    font-weight: 700;
+}
+
 .newsletter label::after {
     content: "\A";
     white-space: pre;

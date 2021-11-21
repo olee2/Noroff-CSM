@@ -82,7 +82,6 @@ input:focus, textarea:focus{
     width: 50px;
     border: 1px solid #0088B3;
     margin-top: 8px;
- 
 }
 
 .a{
@@ -133,7 +132,6 @@ input:focus, textarea:focus{
     grid-area: l5;
 }
 
-
 .semi-bold{
     font-weight: 600;
 }
@@ -161,7 +159,7 @@ input:focus, textarea:focus{
 .active{
     text-decoration: underline;
     text-decoration-color: #FF8C1A;
-    text-decoration-thickness: 2px ;
+    text-decoration-thickness: 2px;
 }
 
 .active:hover{
@@ -274,7 +272,7 @@ input:focus, textarea:focus{
 }
 
 .blue-btn{
-    background-color: #19C9FF ;
+    background-color: #19C9FF;
     border: solid 2px #19C9FF;
 }
 
@@ -385,10 +383,6 @@ input:focus, textarea:focus{
 
 /* Header and Nav */
 
-header{
-    flex-direction: column;
-}
-
 .sticky-header{
     height: 87px;
     background-color: #FFF;
@@ -407,7 +401,6 @@ nav a{
 nav a:hover{
     text-decoration: underline;
     text-decoration-color: #FF8C1A;
-
 }
 
 .logo{
@@ -449,7 +442,6 @@ nav a:hover{
 }
 
 @media screen and (max-width: 1260px){
-
     .logo{
         margin-left: 37px;
     }
@@ -460,7 +452,7 @@ nav a:hover{
 
     .ham-nav label{
         margin-right: 37px;
-      }
+    }
   
     .ham-items{
       display:none;
@@ -481,10 +473,9 @@ nav a:hover{
       padding: 3px 12px 10px 10px;
       position: absolute;
       transition: transform 0.2s;
-  
     }
   
-    .ham-nav input:checked ~ .ham-items {
+    .ham-nav input:checked ~ .ham-items{
       display: block;
       margin-top: 58px;
       width: 100%;
@@ -492,26 +483,23 @@ nav a:hover{
       top: 30px;
     }
   
-    .ham-nav input:checked ~ label {
+    .ham-nav input:checked ~ label{
       transform: rotate(90deg);
-  
     }
 
     nav a:hover{
         text-decoration: none;
     }
 
-    .ham-nav .button{
-        display: block;
-    }
-
-    .ham-nav .button:hover{
-        background-color: #FF8C1A;
+    .active:hover{
+        text-decoration: underline;
+        text-decoration-color: #FF8C1A;
+        text-decoration-thickness: 2px;
     }
 }
 
 @media screen and (max-width: 992px){
-    .ham-nav input:checked ~ .ham-items {
+    .ham-nav input:checked ~ .ham-items{
         top: 19px;
       }
 
@@ -523,6 +511,7 @@ nav a:hover{
         width: 120px;
         margin-left: 16px;
     }
+
     .ham-nav label{
         margin-right: 4px;
     }
@@ -595,7 +584,7 @@ main{
 .newsletter label::after {
     content: "\A";
     white-space: pre;
-  }
+}
 
 .newsletter input{
     box-sizing: border-box;
@@ -624,7 +613,6 @@ main{
     margin: 0 16px;
 }
 
-
 @media screen and (max-width: 992px){
     .newsletter{
         text-align: center;
@@ -646,7 +634,7 @@ main{
         margin-top: 150px;
     }
 
-    .connect {
+    .connect{
         margin: 0 16px;
     }
 }
@@ -795,7 +783,6 @@ main{
 }
 
 @media screen and (max-width: 992px){
-
     .image-div, .text-div{
         width: 600px;
     }
@@ -808,7 +795,6 @@ main{
         flex-direction: column;
         align-content: flex-start;
         box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px;
-   
     }
 
     .kids, .researchers{
@@ -820,6 +806,10 @@ main{
         height: auto;
         background-color: #FFF;
     }
+
+    .text-div .btn:hover{
+        background-color: #19C9FF;
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -827,7 +817,6 @@ main{
         background-size: cover;
         background-position: 70% 10%;
     }
-
 
     .image-div, .text-div{
         max-width: 600px;
@@ -966,7 +955,6 @@ main{
         background-color: #0088B3;
         color:#FFF;
     }
-
 }
 
 /* Footer */
@@ -982,7 +970,6 @@ footer{
 .copyright{
     color: #FFF;
     align-items: center;
-
 }
 
 .copyright img{
@@ -1047,5 +1034,4 @@ footer .footer-links .active{
     .social-media{
         padding: 12px 0;
     }
-
 }

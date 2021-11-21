@@ -12,7 +12,7 @@ html, body{
 
 a{
     text-decoration: none;
-  }
+}
 
 h1{
     color: #FFF;
@@ -233,7 +233,6 @@ input:focus, textarea:focus{
 .header-image-height{
     height: 600px;
 }
-
 
 .align-self-center{
     align-self: center;
@@ -682,7 +681,6 @@ main{
     color: #505050;
 }
 
-
 .visit .separate-section{
     margin: 50px 0;
 }
@@ -730,6 +728,7 @@ main{
         margin: 0 16px;
     }
 }
+
 /* Explore Page */
 
 .header-image-explore{
@@ -757,7 +756,6 @@ main{
 .explore .separate{
     display: block;
 }
-
 
 .text-div, .image-div {
     width: 496px;
@@ -796,7 +794,6 @@ main{
     max-width: none;
     width: 100%;
 }
-
 
 @media screen and (max-width: 992px){
 
@@ -980,6 +977,7 @@ footer{
     margin-top: 50px;
     padding: 12px 100px;
     justify-content: space-between;
+    font-weight: 700;
 }
 
 .copyright{

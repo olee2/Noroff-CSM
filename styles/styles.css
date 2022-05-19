@@ -16,14 +16,14 @@ a{
 
 h1{
     color: #FFF;
-    font-size: 50px;
+    font-size: 67px;
     letter-spacing: 3px;
     text-shadow: 1px 1px 1px #000;
 }
 
 h2{
     font-size: 37px;
-    font-weight: 600;
+    font-weight: 400;
     margin: 0;
 }
 
@@ -35,7 +35,7 @@ h3{
 }
 
 h2, h3{
-    color: #0088B3;
+    color: #005D79;
 }
 
 p{
@@ -47,9 +47,10 @@ hr{
     box-sizing: border-box;
 }
 
+
 input:focus, textarea:focus{
     outline-style: groove;
-    outline-color: #0088B3;
+    outline-color: #005D79;
 }
 
 .link{
@@ -59,7 +60,7 @@ input:focus, textarea:focus{
 }
 
 .link:hover{
-    color: #0088B3;
+    color: #005D79;
 }
 
 .separate{
@@ -80,7 +81,7 @@ input:focus, textarea:focus{
 
 .h2-line{
     width: 50px;
-    border: 1px solid #0088B3;
+    border: 1px solid #005D79;
     margin-top: 8px;
 }
 
@@ -223,7 +224,6 @@ input:focus, textarea:focus{
 }
 
 .header-image{
-    border-bottom: 1px solid #FF8C1A;
     background-size: cover;
 }
 
@@ -261,6 +261,7 @@ input:focus, textarea:focus{
     font-weight: 600;
     display: block;
     text-align: center;
+    transition: 0.3s;
     color: #000;
     height: 67px;
     padding: 16px;
@@ -356,7 +357,7 @@ input:focus, textarea:focus{
     h3{
         font-size: 21px;
         margin: 21px 0;
-        font-weight: 700;
+
     }
 
     .container{
@@ -389,13 +390,15 @@ input:focus, textarea:focus{
     justify-content: space-between;
     position: fixed;
     padding-top: 10px;
-    border-bottom: solid 1px #0088B3;
+    border-bottom: solid 1px #005D79;
     width: 100%;
 }
 
 nav a{
-    color: #0088B3;
-    font-weight: 700;
+    color: #005D79;
+    transition: 0.2s linear;
+    text-decoration: underline;
+    text-decoration-color: #FFF;
 }
 
 nav a:hover{
@@ -416,6 +419,7 @@ nav a:hover{
   align-items: center;
   margin-right: 100px;
   background-color: #FFF;
+  transition: 0.3s;
 }
 
 .ham-link{
@@ -457,7 +461,7 @@ nav a:hover{
     .ham-items{
       display:none;
       margin-right: 0;
-      border-bottom: solid 1px #0088B3;
+      border-bottom: solid 1px #005D79;
     }
   
     .ham-link{
@@ -532,7 +536,7 @@ main{
 }
 
 .header-image-home h1{
-    margin-top: 200px;
+   
 }
 
 .header-cta{
@@ -542,6 +546,7 @@ main{
 
 .header-cta p{
     font-size: 21px;
+    letter-spacing: 1px;
 }
 
 .header-cta .btn{
@@ -557,7 +562,7 @@ main{
 }
 
 .connect{
-    color: #0088B3;    
+    color: #005D79;    
 }
 
 .connect .h2-line{
@@ -572,6 +577,8 @@ main{
     width: 100%;
     margin-top: 28px;
 }
+
+
 
 .newsletter{
     max-width: 100%;
@@ -590,7 +597,7 @@ main{
     box-sizing: border-box;
     height: 67px;
     padding-left: 30px;
-    border: 1px solid #0088B3;
+    border: 1px solid #005D79;
     box-shadow: none;
     margin-right: 12px;
     flex: 3;
@@ -598,7 +605,7 @@ main{
 
 .newsletter input:focus{
     outline-style: groove;
-    outline-color: #0088B3;
+    outline-color: #005D79;
 }
 
 .newsletter .btn{
@@ -659,9 +666,10 @@ main{
     "e c";
 }
 
-.visit img{
+.visit iframe{
     max-width: 250px;
-    border: solid 1px #0088B3;
+    max-height: 250px;
+    border: solid 1px #005D79;
 }
 
 .visit p{
@@ -872,7 +880,7 @@ main{
 
 .contact input, .contact textarea{
     margin-bottom: 16px;
-    border: solid 1px #0088B3;
+    border: solid 1px #005D79
 }
 
 .contact label{
@@ -909,9 +917,9 @@ main{
 }
 
 .contact .btn{
-    background-color: #0088B3;
+    background-color: #005D79;
     color: #FFF;
-    border-color: #0088B3;
+    border-color: #005D79;
     width: 50%;
     align-self: center;
 }
@@ -923,7 +931,7 @@ main{
 
 .map{
     max-width: 100%;
-    border: solid 1px #0088B3;
+    border: solid 1px #005D79;
     margin-top: 38px;
 }
 
@@ -952,7 +960,7 @@ main{
     }
 
     .contact .btn:hover{
-        background-color: #0088B3;
+        background-color: #005D79;
         color:#FFF;
     }
 }
@@ -960,11 +968,11 @@ main{
 /* Footer */
 
 footer{
-    background-color: #0088B3;
+    background-color: #005D79;
     margin-top: 50px;
     padding: 12px 100px;
     justify-content: space-between;
-    font-weight: 700;
+
 }
 
 .copyright{

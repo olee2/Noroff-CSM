@@ -37,13 +37,13 @@
         </div>
         <form class="flex flex-column justify-content-between">
           <label for="first">First Name</label>
-          <input type="text" id="first">
+          <input type="text" id="first" required>
           <label for="last">Last Name</label>
-          <input type="text" id="last">
+          <input type="text" id="last" required>
           <label for="email">Email</label>
-          <input type="text" id="email">
+          <input type="email" id="email" required>
           <label for="message">Message</label>
-          <textarea id="message"></textarea>
+          <textarea id="message" minlength="10" required></textarea>
           <button class="btn blue-btn">Send</button>
         </form>
       </section>
@@ -61,7 +61,7 @@
           <img class="icon" src="icons/Map.svg" alt="Location icon">
           <p>Science Street 1 <br> Science Town</p>
         </div>
-        <img class="map" src="images/maps.png" alt="Map of location">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4529.407078726636!2d10.393824000101167!3d63.43071367858243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x466d319747037e53%3A0xbf7c8288f3cf3d4!2sTrondheim%2C%20Norge!5e0!3m2!1sno!2sse!4v1652961577135!5m2!1sno!2sse" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
     </div>
     <hr class="separate-section line-color line1">

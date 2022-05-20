@@ -532,6 +532,7 @@ main{
     url("../images/AdobeStock_208752273-min.jpeg");
     background-position: center 10%;
     height: 100vh;
+    min-height: 500px;
     box-sizing: border-box;
 }
 

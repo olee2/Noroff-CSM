@@ -1,7 +1,27 @@
-# Noroff-CSM
- 
-My first semester project for my Front-end development studies at Noroff. 
+# Community Science Center
 
-HTML & CSS only, no frameworks. The copy and some of the images was provided by Noroff. 
+![image](https://github.com/olee2/portfolio/blob/master/images/csm.png)
 
-Link to live site: https://noroff-csm.netlify.app/index.html
+My first semester project for my front-end development studies at Noroff.
+
+## Description
+
+We were tasked with building a web site for a science museum that should be informative and appealing. The copy and some of the images were provided by Noroff.
+
+Requirements:
+
+- 4-6 pages
+- Responsive
+- Quick to download
+- Should take WCAG principles into consideration
+
+[Live Site](https://noroff-csm.netlify.app)
+
+## Built With
+
+- HTML
+- CSS
+
+## Contact
+
+[My LinkedIn page](https://www.linkedin.com/in/ole-andr%C3%A9-eikrem-1b0752202/)
